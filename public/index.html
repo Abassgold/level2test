@@ -11,7 +11,9 @@
 <body>
     <div class="container">
       
-        <button class=" btn btn-success text-white mb-3" onclick="show()" id="submit">SUBMIT</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show()" id="submit">Check first student</button>
+        <div id="showing"></div>
+        <button class="mt-2 btn btn-success text-white mb-3" onclick="show1()" id="submit">Check second student</button>
         <div id="showing"></div>
 
     </div>
@@ -36,8 +38,12 @@
 
           
           const myName = new nametodo("azeez", "abass");
+          const myName1 = new nametodo("Kola", "Sqi");
           function show(){
             myName.result();
+          }
+          function show1(){
+            myName1.result();
           }
     </script>
 </body>
