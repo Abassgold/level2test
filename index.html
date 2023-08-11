@@ -11,45 +11,41 @@
 <body>
     <div class="container">
         <div class="py-2 form-floating">
-            <input type="text" id="firstName" class=" form-control" placeholder="Enter">
+            <input type="text" id="input1" class=" form-control" placeholder="Enter">
             <label for="" class=" form-label">Enter your first name</label>
         </div>
         <div class="py-2 form-floating">
-            <input type="text" id="lastName" class=" form-control" placeholder="enter">
+            <input type="text" id="input2" class=" form-control" placeholder="enter">
             <label for="" class=" form-label">Enter your last name</label>
         </div>
-        <button class=" btn btn-success text-white mb-3" onclick="display()" id="submit">SUBMIT</button>
-        <div id="show"></div>
+        <button class=" btn btn-success text-white mb-3" onclick="show()" id="submit">SUBMIT</button>
+        <div id="showing"></div>
 
     </div>
 
     <script>
-        let a = document.getElementById("firstName").value;
-        let b = document.getElementById("lastName").value;
 
-        class nameTodo {
+
+        class nametodo {
             constructor(a, b) {
-                    this.firstname = a,
-                    this.lastname = b
+              this.a = a;
+              this.b = b;
             }
-       
-           display () {
-            show.innerHTML = `
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Your first name is ${this.firstname}</h5>
-                  <h5 class="card-title">Your last name is ${this.lastname}</h5>
+          
+            result() {
+                showing.innerHTML +=`
+              <div class="card">
+                <h5 class="card-header">your first name is ${this.a}</h5>
+                <h5 class="card-header">your second name is ${this.b}</h5>
+              </div>`
+            }
+          }
 
-                </div>
-              </div>
-              `
-        }
-    }
-        let name1 = new nameTodo(a, b)
-
-        function display() {
-            name1.display();
-        }
+          
+          const myName = new nametodo("azeez", "abass");
+          function show(){
+            myName.result();
+          }
     </script>
 </body>
 
