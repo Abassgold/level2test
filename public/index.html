@@ -11,8 +11,16 @@
 <body>
     <div class="container">
       
-        <button class="mt-5 btn btn-success text-white" onclick="show()" id="submit">Check first student</button><br>
-        <button class="mt-2 btn btn-success text-white mb-3" onclick="display()" >Check second student</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show1()">Check student1</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show2()">Check student2</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show3()">Check student3</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show4()">Check student4</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show5()">Check student5</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show6()">Check student6</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show7()">Check student7</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show8()">Check student8</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show9()">Check student9</button>
+        <button class="mt-5 btn btn-success text-white mb-3" onclick="show10()">Check student10</button>
         <div id="showing"></div>
 
     </div>
@@ -27,7 +35,7 @@
             }
           
             result() {
-                showing.innerHTML +=`
+                showing.innerHTML =`
               <div class="card">
                 <h5 class="card-header">your first name is ${this.a}</h5>
                 <h5 class="card-header">your second name is ${this.b}</h5>
@@ -36,15 +44,56 @@
           }
 
           
-          const firstStudent = new nametodo("azeez", "abass");
-          const secondStudent = new nametodo("Kola", "Sqi");
+          const student1 = new nametodo("azeez", "abass");
+          const student2 = new nametodo("Kola", "Sqi");
+          const student3 = new nametodo("bisi", "FM");
+          const student4 = new nametodo("fatimoh", "omolola");
+          const student5 = new nametodo("faith", "okiki");
+          const student6 = new nametodo("bisi", "bola");
+          const student7 = new nametodo("Kay", "raymond");
+          const student8 = new nametodo("bose", "caicedo");
+          const student9 = new nametodo("kabir", "tola");
+          const student10 = new nametodo("basirah", "odere");
+
   
-          function show(){
+          function show1(){
             console.log("working")
-            firstStudent.result();
+            student1.result();
           }
-          function display(){
-            secondStudent.result();
+          function show2(){
+            student2.result();
+            console.log("working")
+          }
+          function show3(){
+            student3.result();
+            console.log("working")
+          }
+          function show4(){
+            student4.result();
+            console.log("working")
+          }
+          function show5(){
+            student5.result();
+            console.log("working")
+          }
+          function show6(){
+            student6.result();
+            console.log("working")
+          }
+          function show7(){
+            student7.result();
+            console.log("working")
+          }
+          function show8(){
+            student8.result();
+            console.log("working")
+          }
+          function show9(){
+            student9.result();
+            console.log("working")
+          }
+          function show10(){
+            student10.result();
             console.log("working")
           }
     </script>
