@@ -11,8 +11,7 @@
 <body>
     <div class="container">
       
-        <button class="mt-5 btn btn-success text-white mb-3" onclick="show()" id="submit">Check first student</button>
-        <div id="showing"></div>
+        <button class="mt-5 btn btn-success text-white" onclick="show()" id="submit">Check first student</button><br>
         <button class="mt-2 btn btn-success text-white mb-3" onclick="display()" >Check second student</button>
         <div id="showing"></div>
 
@@ -37,14 +36,15 @@
           }
 
           
-          const myName = new nametodo("azeez", "abass");
-          const myName1 = new nametodo("Kola", "Sqi");
+          const firstStudent = new nametodo("azeez", "abass");
+          const secondStudent = new nametodo("Kola", "Sqi");
+  
           function show(){
             console.log("working")
-            myName.result();
+            firstStudent.result();
           }
           function display(){
-            myName1.result();
+            secondStudent.result();
             console.log("working")
           }
     </script>
